@@ -12,6 +12,8 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface ItemsRepository extends JpaRepository<Items, Integer>{
 
-	List<Items> findByIdLessThan(int num);
-	
+	// List<Items> findByIdLessThan(int num);
+
+	Items findByProductname(String product_name);
+	Items findById(int id);
 }
